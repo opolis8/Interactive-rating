@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--VeryDarkBlue);
+}
+
+main {
+  width: 20rem;
+  height: 22rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: var(--DarkBlue);
+}
+.question {
+  color: var(--White);
+}
+.rate-description {
+  color: var(--LightGrey);
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  border-radius: 50%;
+  border: none;
+  padding: 11px 15px;
+  background-color: rgb(255, 255, 255, 0.1);
+  color: var(--MediumGrey);
+}
+
+.btn:hover {
+  background-color: var(--Orange);
+  color: white;
+  cursor: pointer;
+}
+
+.submit {
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--Orange);
+  color: var(--White);
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+.image-div {
+  background-color: rgb(255, 255, 255, 0.09);
+  text-align: center;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.star-img {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.is-toggled {
+  color: var(--White);
+  background-color: var(--MediumGrey);
+}
+.thank-you-img {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  margin-left: 3.5rem;
+}
+.selected-number {
+  margin: 30px 40px 30px 40px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 11px;
+  background-color: rgb(255, 255, 255, 0.09);
+}
+
+.text-number {
+  color: var(--Orange);
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.thank-again {
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.thank-you {
+  color: var(--White);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.thank-you-description {
+  color: var(--LightGrey);
+  text-align: center;
+  font-size: 0.8rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
